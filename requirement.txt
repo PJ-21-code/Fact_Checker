@@ -1,0 +1,6 @@
+transformers==4.44.2
+torch>=2.6.0
+streamlit
+pandas
+scikit-learn
+datasets
