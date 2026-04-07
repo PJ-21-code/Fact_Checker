@@ -4,3 +4,5 @@ streamlit
 pandas
 scikit-learn
 datasets
+google-generativeai
+duckduckgo-search
