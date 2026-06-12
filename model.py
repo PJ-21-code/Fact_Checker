@@ -8,8 +8,7 @@ from datetime import datetime
 class FactCheckerRAG:
     def __init__(self, api_key: str):
         self.client = genai.Client(api_key=api_key)
-        # Using gemini-2.5-flash for faster real-time generation, 
-        # but you can upgrade to gemini-1.5-pro for higher reasoning.
+        # Using gemini-2.5-flash for faster real-time generation
         self.model_name = 'gemini-2.5-flash'
         self.ddgs = DDGS()
 
