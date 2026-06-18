@@ -22,7 +22,7 @@ class FactCheckerRAG:
                 response = self.client.models.generate_content(
                     model=model_name,
                     contents=prompt,
-                    config=config # Pass the config for JSON formatting later
+                    config=config 
                 )
                 return response
             except APIError as e:
