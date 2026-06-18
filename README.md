@@ -45,3 +45,6 @@ The Gemini model returns a structured JSON response containing:
 
 ### Step 6: UI Rendering
 Streamlit receives the parsed JSON data and dynamically renders the results to the user. It uses different colors and icons (e.g., green for Real News, red for Fake News) and displays the summary bullets and source links for full transparency.
+
+### Here is the deployed streamlit app of the Fact-Checker
+https://factchecker-elymdyzcet9p4puhdivvhy.streamlit.app/
