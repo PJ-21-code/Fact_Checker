@@ -13,7 +13,7 @@ st.title("📰 Real-Time Fake News Detector")
 st.write("Detect if a news article or social media post is **Fake** or **Real** using dynamic web retrieval and AI analysis.")
 
 # Retrieve API key from environment
-api_key = os.environ.get("GEMINI_API_KEY")
+api_key = os.getenv("GEMINI_API_KEY")
 
 if api_key:
     # Initialize the Fact checker
