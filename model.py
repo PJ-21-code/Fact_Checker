@@ -1,9 +1,11 @@
 from google import genai
 from google.genai import types
 from duckduckgo_search import DDGS
+from google.genai.errors import APIError
 import json
 import re
 from datetime import datetime
+import time
 
 class FactCheckerRAG:
     def __init__(self, api_key: str):
@@ -11,6 +13,37 @@ class FactCheckerRAG:
         # Using gemini-2.5-flash for faster real-time generation
         self.model_name = 'gemini-2.5-flash'
         self.ddgs = DDGS()
+
+    def _generate_with_retry(self, prompt, model_name, config=None, max_retries=3):
+        """Internal method to handle API retries with exponential backoff."""
+        delay = 1
+        for attempt in range(max_retries):
+            try:
+                response = self.client.models.generate_content(
+                    model=model_name,
+                    contents=prompt,
+                    config=config # Pass the config for JSON formatting later
+                )
+                return response
+            except APIError as e:
+                if e.code in [503, 429] and attempt < max_retries - 1:
+                    print(f"Server busy (Status {e.code}). Retrying in {delay} seconds...")
+                    time.sleep(delay)
+                    delay *= 2
+                else:
+                    raise e
+
+    def _generate_with_fallback(self, prompt, config=None):
+        """Internal method to try 2.5-flash first, then fallback to 1.5-flash."""
+        try:
+            print("Attempting with gemini-2.5-flash...")
+            return self._generate_with_retry(prompt, model_name="gemini-2.5-flash", config=config)
+        except APIError as e:
+            if e.code == 503:
+                print("gemini-2.5-flash unavailable. Falling back to gemini-1.5-flash...")
+                return self._generate_with_retry(prompt, model_name="gemini-1.5-flash", config=config)
+            else:
+                raise e
 
     def search_web(self, query: str, max_results=5):
         """Retrieves raw search results to form the context for the Generator."""
