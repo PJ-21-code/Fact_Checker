@@ -15,6 +15,45 @@ Here is a breakdown of the primary libraries and technologies utilized in this p
 *   **DuckDuckGo Search (`duckduckgo-search`)**: The web scraping tool used to perform real-time searches. It pulls both latest news and general text results from the web to provide context to the LLM.
 *   **Python Dotenv (`python-dotenv`)**: Used to securely load environment variables, specifically the `GEMINI_API_KEY`, from a local `.env` file.
 
+## System Architecture
+
+The following diagram illustrates the end-to-end architecture and data flow of the Fake News Predictor:
+
+```mermaid
+flowchart TD
+    subgraph Client["Frontend Layer"]
+        User["User"] -->|"Submits Claim / News Text"| UI["Streamlit Web App (predictor_app.py)"]
+        UI -->|"Renders Assessment, Confidence Score, Summary & Sources"| User
+    end
+
+    subgraph Engine["RAG Pipeline (model.py: FactCheckerRAG)"]
+        UI -->|"analyze_claim(claim)"| Controller["Pipeline Controller"]
+
+        subgraph QueryGen["1. Query Formulation"]
+            Controller -->|"Original Claim"| GeminiQ["Gemini 2.5 Flash"]
+            GeminiQ -->|"Concise Search Query (3-4 words + Year)"| Controller
+        end
+
+        subgraph Retrieval["2. Web Retrieval (R)"]
+            Controller -->|"Search Query"| DDG["DuckDuckGo Search (DDGS)"]
+            DDG -->|"News & Text Results"| Context["Context Aggregator & Deduplicator"]
+            Context -->|"Compiled Context with URLs"| Controller
+        end
+
+        subgraph Generation["3. Analysis & Generation (G)"]
+            Controller -->|"Claim + Retrieved Context + Fact-Check Prompt"| GeminiAnalysis["Gemini 2.5 Flash (JSON Mode)"]
+            GeminiAnalysis -->|"Structured JSON Response"| Validator["JSON Parser & Response Formatter"]
+            Validator -->|"Final Result Dictionary"| UI
+        end
+    end
+
+    subgraph External["External Services"]
+        GeminiQ -.->|"Generate Content"| GoogleGenAI["Google Gemini API (gemini-2.5-flash)"]
+        GeminiAnalysis -.->|"Generate Content"| GoogleGenAI
+        DDG -.->|"Fetch News & Web Snippets"| Web["DuckDuckGo Search Engine"]
+    end
+```
+
 ## Step-by-Step Workflow
 
 When a user pastes a claim into the application and clicks "Analyze Claim", the following sequence of events occurs:
