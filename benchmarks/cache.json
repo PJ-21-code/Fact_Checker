@@ -1,0 +1,435 @@
+{
+  "1": {
+    "claim_id": 1,
+    "claim": "The James Webb Space Telescope was launched into space on December 25, 2021.",
+    "ground_truth": "Real News",
+    "category": "Science & Space",
+    "result": {
+      "credibility": "Real News",
+      "confidence_score": 1.0,
+      "summary_points": [
+        "The James Webb Space Telescope (JWST) is a collaborative project between NASA, ESA, and CSA, designed to be the premier observatory of the next decade, serving thousands of astronomers worldwide.",
+        "The claim states that the James Webb Space Telescope was launched into space on December 25, 2021. This date is accurate and widely documented.",
+        "The provided context confirms the James Webb Space Telescope's active and ongoing operations as of November 2026, with mentions of recent images released in 2026 (Source 2) and press releases from 2026 detailing its scientific observations (Source 3).",
+        "The telescope's continuous activity and significant scientific output since its launch, as evidenced by the provided context and public records, are consistent with a launch date in late 2021, allowing for several years of operation and data collection by November 2026.",
+        "Therefore, the claim that the James Webb Space Telescope was launched on December 25, 2021, is correct."
+      ],
+      "sources": [
+        "https://science.nasa.gov/mission/webb/",
+        "https://science.nasa.gov/mission/webb/multimedia/images/",
+        "https://esawebb.org/news/archive/year/2026/",
+        "https://spacetelescopelive.org/webb"
+      ]
+    },
+    "latency_seconds": 15.664,
+    "timestamp": "2026-11-20T17:11:31.977368"
+  },
+  "2": {
+    "claim_id": 2,
+    "claim": "Water boils at 100 degrees Celsius at standard atmospheric pressure (1 atm).",
+    "ground_truth": "Real News",
+    "category": "Science & Physics",
+    "result": {
+      "credibility": "Real News",
+      "confidence_score": 1.0,
+      "summary_points": [
+        "The boiling point of water is a fundamental physical property that is directly influenced by the surrounding atmospheric pressure. This means that as pressure changes, the temperature at which water boils also changes.",
+        "According to established scientific principles and supported by the provided context (Sources 1, 3, 4), water boils at 100 degrees Celsius when subjected to standard atmospheric pressure, which is defined as 1 atmosphere (1 atm) or 101.325 kilopascals (kPa).",
+        "The retrieved information, particularly from sources updated in 2026, consistently discusses the relationship between boiling point, pressure, and altitude (Source 1, 3), and refers to an 'exact temperature of boiling water' under varying conditions (Source 4). This indirectly affirms the existence and accuracy of a standard boiling point under standard conditions.",
+        "Therefore, the claim that water boils at 100 degrees Celsius at standard atmospheric pressure (1 atm) is a well-established and accurate scientific fact."
+      ],
+      "sources": [
+        "https://projectxeros.org/water-boiling-temp-vs-pressure-guide",
+        "https://en.wikipedia.org/wiki/Boiling_point",
+        "https://best-calculators.com/education-academic/boiling-point-altitude-calculator/",
+        "https://reports.bankstreet.edu/all-about-temperature-of-a-boiling-water-updated-2026"
+      ]
+    },
+    "latency_seconds": 10.16,
+    "timestamp": "2026-11-20T17:11:43.139004"
+  },
+  "3": {
+    "claim_id": 3,
+    "claim": "Humans typically have 23 pairs of chromosomes in most cells.",
+    "ground_truth": "Real News",
+    "category": "Biology & Health",
+    "result": {
+      "credibility": "Real News",
+      "confidence_score": 0,
+      "summary_points": [
+        "Humans possess a distinct genetic blueprint, which is defined by a specific number of chromosomes found within the nuclei of their cells.",
+        "Multiple reliable sources, including those dated as recently as October 5, 2026, consistently confirm that the vast majority of human cells, specifically somatic or typical body cells, contain 46 chromosomes.",
+        "These 46 chromosomes are organized into 23 pairs, comprising 22 pairs of autosomes and one pair of sex chromosomes, directly supporting the claim that humans typically have 23 pairs of chromosomes in most cells."
+      ],
+      "sources": [
+        "https://biennialsandeducation.org/human-chromosome-pairs-explained",
+        "https://www.sciencenewstoday.org/human-chromosomes-how-many-do-we-have-and-why",
+        "https://proteiniq.io/guides/how-many-chromosomes-do-humans-have",
+        "https://biologyinsights.com/how-many-chromosome-combinations-are-possible-in-humans/"
+      ]
+    },
+    "latency_seconds": 11.289,
+    "timestamp": "2026-11-20T17:11:55.429300"
+  },
+  "5": {
+    "claim_id": 5,
+    "claim": "The United Kingdom officially left the European Union on January 31, 2020.",
+    "ground_truth": "Real News",
+    "category": "Politics & History",
+    "result": {
+      "credibility": "Real News",
+      "confidence_score": 0.9,
+      "summary_points": [
+        "The United Kingdom's departure from the European Union, commonly known as Brexit, was a landmark political event that followed a referendum in 2016 and subsequent negotiations.",
+        "On January 31, 2020, the United Kingdom officially ceased to be a member state of the European Union. This date marked the legal and political withdrawal, although a transition period was in place until the end of 2020 to negotiate future trade and other relationships.",
+        "Multiple sources published in 2026 discuss 'Brexit' and 'leaving the EU' as past events, examining its impact and potential future adjustments (e.g., 'Brexit 2026: What Actually Changed After Leaving the EU?', 'What impact has Brexit had on the UK and EU economies?', 'Undoing Brexit'), implicitly confirming the event's occurrence prior to these dates. Historical records consistently confirm January 31, 2020, as the official departure date.",
+        "Therefore, the claim that the United Kingdom officially left the European Union on January 31, 2020, is accurate and supported by established historical facts."
+      ],
+      "sources": [
+        "https://www.davidsonmorris.com/brexit/",
+        "https://en.wikipedia.org/wiki/Brexit",
+        "https://www.theguardian.com/business/2026/nov/20/what-impact-brexit-uk-eu-economies",
+        "https://www.nytimes.com/2026/11/18/world/19int-theworld-brexit-trump-xi-putin.html"
+      ]
+    },
+    "latency_seconds": 19.89,
+    "timestamp": "2026-11-20T17:12:22.873025"
+  },
+  "6": {
+    "claim_id": 6,
+    "claim": "Penicillin was discovered by Scottish physician Alexander Fleming in 1928.",
+    "ground_truth": "Real News",
+    "category": "Medicine & Science",
+    "result": {
+      "credibility": "Real News",
+      "confidence_score": 0,
+      "summary_points": [
+        "Sir Alexander Fleming was a Scottish physician and microbiologist, a fact corroborated by his Wikipedia entry, which also notes his sharing of the 1945 Nobel Prize for the discovery of penicillin.",
+        "Multiple reliable sources confirm that Alexander Fleming indeed made his significant discovery of penicillin in 1928. Britannica, the American Chemical Society, and a recent article from the Times of India all specify 1928 as the year of this landmark event, which occurred through a chance observation at St. Mary's Hospital.",
+        "Based on the consistent and verifiable information from the provided context, the claim that penicillin was discovered by Scottish physician Alexander Fleming in 1928 is accurate."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alexander_Fleming",
+        "https://www.britannica.com/science/How-did-Alexander-Fleming-discover-penicillin-in-1928",
+        "https://www.acs.org/education/whatischemistry/landmarks/flemingpenicillin.html",
+        "https://timesofindia.indiatimes.com/science/in-1928-alexander-fleming-noticed-a-strange-mould-on-a-petri-dish-and-this-observation-launched-the-antibiotic-era/articleshow/130850452.cms"
+      ]
+    },
+    "latency_seconds": 13.129,
+    "timestamp": "2026-11-20T17:12:37.004304"
+  },
+  "7": {
+    "claim_id": 7,
+    "claim": "The Great Barrier Reef is situated off the north-east coast of Australia.",
+    "ground_truth": "Real News",
+    "category": "Geography & Nature",
+    "result": {
+      "credibility": "Real News",
+      "confidence_score": 0,
+      "summary_points": [
+        "The Great Barrier Reef is a vast coral reef system, globally recognized as the world's largest, situated off the coast of Australia.",
+        "It is a well-established geographical fact that the Great Barrier Reef is specifically located off the north-east coast of the Australian continent, extending along the Queensland coastline.",
+        "The real-time context retrieved from November 2026 confirms the ongoing existence and significance of the Great Barrier Reef within Australia, with discussions about its health, tourism, and future challenges (Sources 1, 2, 3, 4).",
+        "While the provided search snippets do not explicitly mention the 'north-east' designation, the claim accurately reflects the universally accepted and precise geographical location of the Great Barrier Reef.",
+        "Therefore, the claim that 'The Great Barrier Reef is situated off the north-east coast of Australia' is entirely accurate."
+      ],
+      "sources": [
+        "https://www.wfy24.com/en/article/great-barrier-reef-2026-diving-into-the-coral-spawning-and-manta-ray-season",
+        "https://www.straitstimes.com/asia/australianz/great-barrier-reef-at-risk-of-collapse-scientists-warn",
+        "https://worldlya.com/australia/great-barrier-reef-guide/",
+        "https://matadornetwork.com/read/25-unforgettable-places-go-2026-great-barrier-reef/"
+      ]
+    },
+    "latency_seconds": 17.737,
+    "timestamp": "2026-11-20T17:12:55.743020"
+  },
+  "8": {
+    "claim_id": 8,
+    "claim": "Albert Einstein won the Nobel Prize in Physics in 1921 for his discovery of the law of the photoelectric effect.",
+    "ground_truth": "Real News",
+    "category": "Physics & History",
+    "result": {
+      "credibility": "Real News",
+      "confidence_score": 0.98,
+      "summary_points": [
+        "Albert Einstein is widely recognized for his groundbreaking work on the photoelectric effect, a phenomenon where electrons are emitted from a material's surface when light shines on it.",
+        "The context confirms that Albert Einstein was indeed awarded the Nobel Prize in Physics in 1921. This prize was specifically for his 'discovery of the law of the photoelectric effect,' rather than his theory of relativity, as often mistakenly assumed.",
+        "Multiple sources corroborate that Einstein received the 1921 Nobel Prize for his explanation of the photoelectric effect, making the claim accurate and verifiable."
+      ],
+      "sources": [
+        "https://physics.stemlores.com/stories/einstein-nobel-photoelectric-effect/",
+        "https://nobel-prize.net/en/topics/einstein-and-the-prize/",
+        "https://en.wikipedia.org/wiki/Photoelectric_effect",
+        "/videos/riverview/relatedvideo?q=Einstein+Nobel+photoelectric+2026&ru=/search?q=Einstein+Nobel+photoelectric+2026&mmscn=vwrc&mid=D98F29031E621550D6F9D98F29031E621550D6F9&FORM=WRVORC&ntb=1&msockid=8e362b8be4d711f1970bad9a6b50e9e7"
+      ]
+    },
+    "latency_seconds": 15.793,
+    "timestamp": "2026-11-20T17:13:12.537395"
+  },
+  "9": {
+    "claim_id": 9,
+    "claim": "NASA's Perseverance rover successfully landed on Mars in Jezero Crater in February 2021.",
+    "ground_truth": "Real News",
+    "category": "Space Exploration",
+    "result": {
+      "credibility": "Real News",
+      "confidence_score": 0,
+      "summary_points": [
+        "NASA's Perseverance rover, part of the Mars 2020 mission, is an advanced robotic explorer built and managed by the Jet Propulsion Laboratory.",
+        "The rover successfully landed on Mars on February 18, 2021, marking the beginning of its exploration of the Red Planet, as confirmed by Wikipedia (Source 1).",
+        "Multiple sources, including Orbital Radar, NASA Science, and SatFleetLive, consistently confirm that the Perseverance rover landed in and continues to operate within Jezero Crater, where it has driven over 45 kilometers as of late October 2026 (Sources 2, 3, 4).",
+        "Given the consistent and direct evidence from reputable sources, the claim that NASA's Perseverance rover successfully landed on Mars in Jezero Crater in February 2021 is entirely accurate."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Perseverance_(rover)",
+        "https://orbitalradar.com/mars-rovers/perseverance",
+        "https://science.nasa.gov/mission/mars-2020-perseverance/location-map/",
+        "https://satfleetlive.com/mars/perseverance/"
+      ]
+    },
+    "latency_seconds": 16.148,
+    "timestamp": "2026-11-20T17:13:29.688241"
+  },
+  "10": {
+    "claim_id": 10,
+    "claim": "The Pacific Ocean is the largest and deepest ocean basin on Earth.",
+    "ground_truth": "Real News",
+    "category": "Geography & Oceanography",
+    "result": {
+      "credibility": "Real News",
+      "confidence_score": 0.98,
+      "summary_points": [
+        "The Pacific Ocean is widely recognized as the largest of the Earth's oceanic divisions, playing a significant role in global geography.",
+        "According to sources updated as recently as September 2, 2026, the Pacific Ocean is indeed the largest ocean, covering roughly one-third of the planet's surface, which unequivocally supports the 'largest' part of the claim.",
+        "Moreover, the Pacific Ocean is consistently identified as the deepest ocean on Earth. It hosts the Mariana Trench, which is explicitly stated to be the deepest point, reaching an astounding 10,994 meters.",
+        "Based on comprehensive and current information from various sources, the claim that the Pacific Ocean is both the largest and deepest ocean basin on Earth is thoroughly verified and accurate."
+      ],
+      "sources": [
+        "https://oceanfloormap.com/ocean/pacific-ocean",
+        "https://vajiramandravi.com/current-affairs/pacific-ocean/",
+        "https://en.wikipedia.org/wiki/Pacific_Ocean",
+        "https://geographyworlds.com/blog/deepest-oceans-in-the-world-ranked/"
+      ]
+    },
+    "latency_seconds": 11.337,
+    "timestamp": "2026-11-20T17:13:42.026387"
+  },
+  "12": {
+    "claim_id": 12,
+    "claim": "The Moon landing in 1969 was completely staged by NASA in a Nevada film studio directed by Stanley Kubrick.",
+    "ground_truth": "Fake News",
+    "category": "Conspiracy & History",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 0.9,
+      "summary_points": [
+        "The claim that the 1969 Moon landing was completely staged by NASA in a Nevada film studio and directed by Stanley Kubrick is a well-known and persistent conspiracy theory.",
+        "Recent information, as of November 2026, consistently and definitively debunks this theory, with articles specifically addressing and disproving the notion that acclaimed director Stanley Kubrick was involved in faking the Apollo 11 Moon landing.",
+        "Overwhelming evidence supports the authenticity of the 1969 Moon landing, including independent verification from international observers, lunar samples brought back to Earth, and scientific instruments left on the Moon, all of which contradict the idea of a staged event.",
+        "Therefore, the assertion that the Moon landing was a fabrication orchestrated by NASA and Kubrick is false and has been thoroughly debunked by numerous sources and extensive evidence."
+      ],
+      "sources": [
+        "https://darkskiesfilm.com/did-stanley-kubrick-say-hes-film-the-moon-landing/",
+        "https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories",
+        "https://www.newsminimalist.com/articles/kubrick-moon-landing-hoax-theory-debunked-by-evidence-5ed0572c",
+        "https://www.imdb.com/title/tt41431804/"
+      ]
+    },
+    "latency_seconds": 13.335,
+    "timestamp": "2026-11-20T17:14:05.786686"
+  },
+  "4": {
+    "claim_id": 4,
+    "claim": "The Eiffel Tower is located in Paris, France.",
+    "ground_truth": "Real News",
+    "category": "Geography",
+    "result": {
+      "credibility": "Real News",
+      "confidence_score": 100,
+      "summary_points": [
+        "The Eiffel Tower is a world-famous wrought-iron lattice tower located on the Champ de Mars in Paris, France.",
+        "Constructed between 1887 and 1889 as the entrance arch for the 1889 World's Fair, it serves as the primary global symbol of both the city of Paris and France as a nation.",
+        "Official documentation, historical records, and ongoing global tourism confirm without any doubt that the Eiffel Tower is located in Paris, France."
+      ],
+      "sources": [
+        "https://www.toureiffel.paris/en/rates-opening-times",
+        "https://www.city-paris.fr/en/eiffel-tower-prices-for-2026/"
+      ]
+    },
+    "model_used": "gemini-3.5-flash",
+    "latency_seconds": 23.989,
+    "timestamp": "2026-11-20T18:30:42.571020"
+  },
+  "11": {
+    "claim_id": 11,
+    "claim": "Drinking silver nitrate or bleach cures diabetes and eliminates high blood sugar permanently.",
+    "ground_truth": "Fake News",
+    "category": "Health & Medicine",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 1.0,
+      "summary_points": [
+        "Drinking silver nitrate, bleach, or any industrial chemical is extremely toxic, dangerous, and completely ineffective as a treatment for diabetes or high blood sugar.",
+        "Health regulatory agencies, including the US Food and Drug Administration (FDA) and World Health Organization (WHO), have repeatedly warned the public against consuming bleach products (such as chlorine dioxide or sodium hypochlorite) or toxic silver salts, noting they can cause severe internal chemical burns, acute liver and kidney failure, life-threatening low blood pressure, and death.",
+        "Diabetes is a chronic metabolic condition managed through medically proven treatments, including insulin therapy, regular monitoring, and lifestyle modifications; there is no scientific basis or approved treatment involving the ingestion of corrosive chemicals to permanently eliminate high blood sugar."
+      ],
+      "sources": []
+    },
+    "model_used": "gemini-3.5-flash",
+    "latency_seconds": 34.94,
+    "timestamp": "2026-11-20T18:31:21.513033"
+  },
+  "13": {
+    "claim_id": 13,
+    "claim": "5G mobile network towers directly emit biological COVID-19 viruses into the atmosphere.",
+    "ground_truth": "Fake News",
+    "category": "Technology & Health",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 100,
+      "summary_points": [
+        "The claim that 5G mobile network towers directly emit biological COVID-19 viruses into the atmosphere is completely false and scientifically impossible.",
+        "5G technology operates by transmitting data via non-ionizing electromagnetic radio frequency waves, whereas SARS-CoV-2 (COVID-19) is a biological viral pathogen made of genetic material (RNA) enclosed in a protein envelope, which cannot be created or transmitted by radio signals.",
+        "Global public health organizations, including the World Health Organization (WHO), the U.S. Centers for Disease Control and Prevention (CDC), and international telecommunications authorities, have repeatedly debunked conspiracies linking 5G infrastructure to the spread of COVID-19."
+      ],
+      "sources": [
+        "https://factually.co/fact-checks/technology/what-is-the-5g-conspiracy-explained-19a1be",
+        "https://m.indiatimes.com/technology/news/no-link-between-5g-trials-and-covid-19-surge-govt-clarifies/articleshow/127564300.html",
+        "https://www.debunkthemyth.org/2026/02/19/5g-towers-and-health-dangers-separating-fact-from-fiction-with-evidence-based-findings/"
+      ]
+    },
+    "model_used": "gemini-3.5-flash",
+    "latency_seconds": 32.448,
+    "timestamp": "2026-11-20T18:31:57.962562"
+  },
+  "14": {
+    "claim_id": 14,
+    "claim": "Eating bananas with milk creates a toxic poison that causes sudden cardiac arrest.",
+    "ground_truth": "Fake News",
+    "category": "Health & Nutrition",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 98,
+      "summary_points": [
+        "There is no scientific or medical evidence to support the claim that combining bananas and milk produces a toxic poison in the human body.",
+        "While traditional systems of medicine such as Ayurveda caution against combining milk and bananas due to beliefs about digestive heaviness, modern nutritional science confirms that both foods can be safely eaten together.",
+        "Banana milkshakes and smoothies are widely consumed global foods that provide standard dietary nutrients like potassium, calcium, and vitamins, and they do not cause sudden cardiac arrest."
+      ],
+      "sources": []
+    },
+    "model_used": "gemini-3.5-flash",
+    "latency_seconds": 34.261,
+    "timestamp": "2026-11-20T18:32:36.225009"
+  },
+  "15": {
+    "claim_id": 15,
+    "claim": "Scientists confirmed that the Earth is hollow and inhabited by an advanced civilization at the core.",
+    "ground_truth": "Fake News",
+    "category": "Pseudoscience",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 1.0,
+      "summary_points": [
+        "The claim that scientists confirmed the Earth is hollow and inhabited by an advanced civilization is entirely false; the Hollow Earth concept is a well-known pseudoscientific myth and science fiction trope.",
+        "Seismologists have mapped the interior structure of the Earth using the propagation of seismic waves generated by earthquakes, conclusively demonstrating that Earth is composed of a solid outer crust, a thick mantle, a liquid outer core, and a dense solid inner core.",
+        "Physical parameters such as Earth's total mass, density, and gravitational force contradict the possibility of a hollow structure, as a hollow shell could not sustain the mass or gravity observed on Earth."
+      ],
+      "sources": [
+        "https://en.m.wikipedia.org/wiki/Hollow_Earth",
+        "https://thisweekinsciencenews.com/blog/2026/10/05/is-the-earth-hollow-the-science-behind-the-hollow-earth-theory/"
+      ]
+    },
+    "model_used": "gemini-3.5-flash",
+    "latency_seconds": 80.288,
+    "timestamp": "2026-11-20T18:34:00.515585"
+  },
+  "16": {
+    "claim_id": 16,
+    "claim": "Microwaving an iPhone for 30 seconds activates a hidden feature that fully recharges its battery.",
+    "ground_truth": "Fake News",
+    "category": "Technology Hoax",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 1.0,
+      "summary_points": [
+        "The claim originates from a notorious 2014 internet hoax called 'Apple Wave', which falsely advertised that updating to iOS 8 unlocked a hidden microwave-charging capability.",
+        "Placing an iPhone or any electronic device inside a microwave oven causes immediate damage to internal circuits and the metal casing, generating sparks, destructive heat, and potentially causing the lithium-ion battery to explode or catch fire.",
+        "Apple has never produced an iPhone capable of being charged via microwave radiation, and both technology experts and emergency services explicitly warn against putting electronics into microwave ovens."
+      ],
+      "sources": [
+        "https://www.androidauthority.com/did-you-know-iphone-microwave-prank-3544906/",
+        "https://www.reddit.com/r/technology/comments/2h407i/trolled_iphone_6_users_try_to_charge_device_in/"
+      ]
+    },
+    "model_used": "gemini-3.5-flash",
+    "latency_seconds": 225.043,
+    "timestamp": "2026-11-20T18:37:49.561848"
+  },
+  "17": {
+    "claim_id": 17,
+    "claim": "The Great Wall of China is the only human-made structure visible from Mars with the naked eye.",
+    "ground_truth": "Fake News",
+    "category": "Myths & Space",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 1.0,
+      "summary_points": [
+        "The claim that the Great Wall of China is visible from Mars with the naked eye is entirely false and physically impossible. From Mars, which is tens of millions of kilometers away, Earth appears only as a tiny point of light (a bright star-like dot) in the sky, making it impossible to resolve any surface features.",
+        "Even from Low Earth Orbit (roughly 300 to 400 kilometers above Earth), astronauts from NASA and China's space program have confirmed that the Great Wall is extremely difficult or impossible to see with the naked eye because it is narrow and made of local stone and dirt that blends into the surrounding landscape.",
+        "No human-made structures are visible to the naked eye from space beyond low orbit, including from the Moon or any other celestial body."
+      ],
+      "sources": []
+    },
+    "model_used": "gemini-3.5-flash",
+    "latency_seconds": 77.282,
+    "timestamp": "2026-11-20T18:39:10.846394"
+  },
+  "18": {
+    "claim_id": 18,
+    "claim": "Vaccines contain microscopic RFID tracking microchips manufactured by Bill Gates to control human minds.",
+    "ground_truth": "Fake News",
+    "category": "Conspiracy & Health",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 0.99,
+      "summary_points": [
+        "The claim that vaccines contain microscopic RFID microchips manufactured by Bill Gates for human mind control is a completely unfounded conspiracy theory with no scientific or factual basis.",
+        "Medical authorities, independent fact-checkers, and regulatory bodies worldwide have verified vaccine ingredients and confirmed that no vaccines contain microchips, tracking devices, or any electronic components.",
+        "This conspiracy theory stems from distorted misinterpretations of comments made by Bill Gates in 2020 regarding 'digital certificates' for tracking vaccination records, which referred to digital health registries, not physical microchip implants."
+      ],
+      "sources": [
+        "https://factually.co/fact-checks/health/did-bill-gates-promote-microchips-in-vaccines-48d119",
+        "https://factually.co/fact-checks/health/microchips-in-covid-vaccines-myth-or-fact-5dd7ab",
+        "https://english.factcrescendo.com/consumer-safety-fact-check/debunking-the-microsoft-microchip-in-covid-19-vaccines-claims-618904",
+        "https://www.factumobscura.com/special-feature/special-feature-debunking-bill-gates-conspiracy-theories-facts-vs-fiction/"
+      ]
+    },
+    "model_used": "gemini-3.5-flash",
+    "latency_seconds": 152.365,
+    "timestamp": "2026-11-20T18:41:47.213661"
+  },
+  "19": {
+    "claim_id": 19,
+    "claim": "Barack Obama was born in Kenya and forged his birth certificate to become US President.",
+    "ground_truth": "Fake News",
+    "category": "Politics",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 100,
+      "summary_points": [
+        "Barack Obama was born in Honolulu, Hawaii, on August 4, 1961, making him a natural-born United States citizen eligible for the presidency under Article II of the U.S. Constitution.",
+        "Official birth records, including contemporary birth announcements published in Hawaiian newspapers in August 1961 as well as both the short-form and official long-form birth certificates released by the Hawaii Department of Health, confirm his birthplace in Honolulu.",
+        "Claims alleging he was born in Kenya or forged his birth certificate are false conspiracy theories that have been thoroughly debunked by government officials, courts, and independent investigative journalists."
+      ],
+      "sources": [
+        "https://www.politifact.com/factchecks/2025/jan/13/threads-posts/no-this-isnt-proof-former-president-barack-obama-w/",
+        "https://en.m.wikipedia.org/wiki/Barack_Obama_citizenship_conspiracy_theories",
+        "https://factually.co/fact-checks/politics/barack-obama-father-kenyan-citizenship-1961-ec0a89",
+        "https://apnews.com/article/fact-check-obama-trump-birther-kenya-091716039186"
+      ]
+    },
+    "model_used": "gemini-3.5-flash",
+    "latency_seconds": 85.813,
+    "timestamp": "2026-11-20T18:43:17.029408"
+  }
+}

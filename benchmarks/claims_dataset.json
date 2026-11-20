@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "claim": "The James Webb Space Telescope was launched into space on December 25, 2021.",
+    "ground_truth": "Real News",
+    "category": "Science & Space",
+    "notes": "Verified NASA/ESA launch date on Ariane 5 rocket."
+  },
+  {
+    "id": 2,
+    "claim": "Water boils at 100 degrees Celsius at standard atmospheric pressure (1 atm).",
+    "ground_truth": "Real News",
+    "category": "Science & Physics",
+    "notes": "Established physical science fact."
+  },
+  {
+    "id": 3,
+    "claim": "Humans typically have 23 pairs of chromosomes in most cells.",
+    "ground_truth": "Real News",
+    "category": "Biology & Health",
+    "notes": "Standard biological fact: 46 chromosomes in 23 pairs."
+  },
+  {
+    "id": 4,
+    "claim": "The Eiffel Tower is located in Paris, France.",
+    "ground_truth": "Real News",
+    "category": "Geography",
+    "notes": "Established geographical landmark."
+  },
+  {
+    "id": 5,
+    "claim": "The United Kingdom officially left the European Union on January 31, 2020.",
+    "ground_truth": "Real News",
+    "category": "Politics & History",
+    "notes": "Official Brexit completion date."
+  },
+  {
+    "id": 6,
+    "claim": "Penicillin was discovered by Scottish physician Alexander Fleming in 1928.",
+    "ground_truth": "Real News",
+    "category": "Medicine & Science",
+    "notes": "Historic medical discovery."
+  },
+  {
+    "id": 7,
+    "claim": "The Great Barrier Reef is situated off the north-east coast of Australia.",
+    "ground_truth": "Real News",
+    "category": "Geography & Nature",
+    "notes": "Geographic location of the world's largest coral reef."
+  },
+  {
+    "id": 8,
+    "claim": "Albert Einstein won the Nobel Prize in Physics in 1921 for his discovery of the law of the photoelectric effect.",
+    "ground_truth": "Real News",
+    "category": "Physics & History",
+    "notes": "Nobel committee citation for Einstein."
+  },
+  {
+    "id": 9,
+    "claim": "NASA's Perseverance rover successfully landed on Mars in Jezero Crater in February 2021.",
+    "ground_truth": "Real News",
+    "category": "Space Exploration",
+    "notes": "Perseverance landed February 18, 2021."
+  },
+  {
+    "id": 10,
+    "claim": "The Pacific Ocean is the largest and deepest ocean basin on Earth.",
+    "ground_truth": "Real News",
+    "category": "Geography & Oceanography",
+    "notes": "Well-established physical geographic fact."
+  },
+  {
+    "id": 11,
+    "claim": "Drinking silver nitrate or bleach cures diabetes and eliminates high blood sugar permanently.",
+    "ground_truth": "Fake News",
+    "category": "Health & Medicine",
+    "notes": "Dangerous medical hoax debunked by FDA and medical consensus."
+  },
+  {
+    "id": 12,
+    "claim": "The Moon landing in 1969 was completely staged by NASA in a Nevada film studio directed by Stanley Kubrick.",
+    "ground_truth": "Fake News",
+    "category": "Conspiracy & History",
+    "notes": "Debunked Apollo 11 conspiracy theory."
+  },
+  {
+    "id": 13,
+    "claim": "5G mobile network towers directly emit biological COVID-19 viruses into the atmosphere.",
+    "ground_truth": "Fake News",
+    "category": "Technology & Health",
+    "notes": "Debunked conspiracy theory connecting telecommunications with viral pathogens."
+  },
+  {
+    "id": 14,
+    "claim": "Eating bananas with milk creates a toxic poison that causes sudden cardiac arrest.",
+    "ground_truth": "Fake News",
+    "category": "Health & Nutrition",
+    "notes": "Unfounded viral dietary hoax."
+  },
+  {
+    "id": 15,
+    "claim": "Scientists confirmed that the Earth is hollow and inhabited by an advanced civilization at the core.",
+    "ground_truth": "Fake News",
+    "category": "Pseudoscience",
+    "notes": "Disproven hollow earth pseudoscience myth."
+  },
+  {
+    "id": 16,
+    "claim": "Microwaving an iPhone for 30 seconds activates a hidden feature that fully recharges its battery.",
+    "ground_truth": "Fake News",
+    "category": "Technology Hoax",
+    "notes": "Known 'Apple Wave' hoax that destroys smartphones."
+  },
+  {
+    "id": 17,
+    "claim": "The Great Wall of China is the only human-made structure visible from Mars with the naked eye.",
+    "ground_truth": "Fake News",
+    "category": "Myths & Space",
+    "notes": "Common misconception debunked by NASA; not visible even from low Earth orbit without magnification."
+  },
+  {
+    "id": 18,
+    "claim": "Vaccines contain microscopic RFID tracking microchips manufactured by Bill Gates to control human minds.",
+    "ground_truth": "Fake News",
+    "category": "Conspiracy & Health",
+    "notes": "Widely debunked conspiracy theory with no factual basis."
+  },
+  {
+    "id": 19,
+    "claim": "Barack Obama was born in Kenya and forged his birth certificate to become US President.",
+    "ground_truth": "Fake News",
+    "category": "Politics",
+    "notes": "Debunked 'birther' claim; official certified birth certificate confirms Honolulu, Hawaii."
+  },
+  {
+    "id": 20,
+    "claim": "Antarctica has secret tropical rainforests where live dinosaurs are currently being guarded by the United Nations.",
+    "ground_truth": "Fake News",
+    "category": "Hoax & Geography",
+    "notes": "Fabricated conspiracy myth."
+  },
+  {
+    "id": 21,
+    "claim": "Artificial General Intelligence (AGI) will definitely achieve human-level consciousness and replace 100% of human jobs by 2030.",
+    "ground_truth": "Unverified",
+    "category": "Technology & AI",
+    "notes": "Unverifiable future prediction and speculative claim."
+  },
+  {
+    "id": 22,
+    "claim": "Drinking coffee daily reduces the overall risk of mortality in all humans.",
+    "ground_truth": "Mixed",
+    "category": "Health & Nutrition",
+    "notes": "Observational studies show associations with longevity, but not universal or causal across all populations."
+  },
+  {
+    "id": 23,
+    "claim": "A single glass of red wine every evening is universally beneficial for heart health.",
+    "ground_truth": "Mixed",
+    "category": "Health & Medicine",
+    "notes": "Conflicting scientific evidence; recent WHO and cardiology guidelines show risks of alcohol may outweigh benefits."
+  },
+  {
+    "id": 24,
+    "claim": "Extraterrestrial intelligent beings have visited Earth and are currently in secret contact with world governments.",
+    "ground_truth": "Unverified",
+    "category": "Science & Space",
+    "notes": "Unproven and unverified; no verified public empirical evidence exists."
+  },
+  {
+    "id": 25,
+    "claim": "Organic food is definitively more nutritious and contains significantly higher vitamin levels than conventional food.",
+    "ground_truth": "Mixed",
+    "category": "Nutrition & Agriculture",
+    "notes": "Mixed scientific evidence; systematic reviews find minor differences in certain antioxidants but no conclusive overall nutritional superiority."
+  }
+]

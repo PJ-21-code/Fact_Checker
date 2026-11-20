@@ -1,0 +1,609 @@
+{
+  "metrics": {
+    "benchmark_metadata": {
+      "timestamp": "2026-11-20T18:19:05.198047",
+      "model_evaluated": "gemini-2.5-flash",
+      "search_engine": "DuckDuckGo (DDGS)",
+      "sample_size": 25,
+      "category_breakdown": {
+        "Real News": 12,
+        "Fake News": 10,
+        "Mixed/Unverified": 3
+      }
+    },
+    "verification_accuracy": {
+      "overall_accuracy_pct": 40.0,
+      "exact_matches": 10,
+      "total_claims": 25,
+      "binary_classification": {
+        "sample_size": 22,
+        "accuracy_pct": 45.45,
+        "true_positives_real": 9,
+        "true_negatives_fake": 1,
+        "false_positives_fake_as_real": 0,
+        "false_negatives_real_as_fake": 0,
+        "precision_real_pct": 100.0,
+        "recall_real_pct": 100.0,
+        "f1_score_real_pct": 100.0
+      },
+      "nuanced_claims": {
+        "sample_size": 3,
+        "accuracy_pct": 0.0,
+        "correct_classifications": 0
+      }
+    },
+    "citation_correctness": {
+      "citation_presence_rate_pct": 40.0,
+      "claims_with_citations": 10,
+      "total_citations_returned": 40,
+      "avg_citations_per_claim": 1.6,
+      "url_validity_rate_pct": 97.5,
+      "total_valid_urls": 39
+    },
+    "response_latency_seconds": {
+      "mean": 6.275,
+      "median_p50": 0.722,
+      "p90": 16.006,
+      "p95": 17.419,
+      "min": 0.347,
+      "max": 19.89,
+      "std_dev": 6.969
+    }
+  },
+  "results": [
+    {
+      "id": 1,
+      "claim": "The James Webb Space Telescope was launched into space on December 25, 2021.",
+      "category": "Science & Space",
+      "ground_truth": "Real News",
+      "norm_ground_truth": "Real News",
+      "predicted_credibility": "Real News",
+      "norm_predicted": "Real News",
+      "is_exact_match": true,
+      "confidence_score": 1.0,
+      "sources": [
+        "https://science.nasa.gov/mission/webb/",
+        "https://science.nasa.gov/mission/webb/multimedia/images/",
+        "https://esawebb.org/news/archive/year/2026/",
+        "https://spacetelescopelive.org/webb"
+      ],
+      "num_sources": 4,
+      "valid_sources_count": 4,
+      "summary_points": [
+        "The James Webb Space Telescope (JWST) is a collaborative project between NASA, ESA, and CSA, designed to be the premier observatory of the next decade, serving thousands of astronomers worldwide.",
+        "The claim states that the James Webb Space Telescope was launched into space on December 25, 2021. This date is accurate and widely documented.",
+        "The provided context confirms the James Webb Space Telescope's active and ongoing operations as of November 2026, with mentions of recent images released in 2026 (Source 2) and press releases from 2026 detailing its scientific observations (Source 3).",
+        "The telescope's continuous activity and significant scientific output since its launch, as evidenced by the provided context and public records, are consistent with a launch date in late 2021, allowing for several years of operation and data collection by November 2026.",
+        "Therefore, the claim that the James Webb Space Telescope was launched on December 25, 2021, is correct."
+      ],
+      "latency_seconds": 15.664,
+      "from_cache": true
+    },
+    {
+      "id": 2,
+      "claim": "Water boils at 100 degrees Celsius at standard atmospheric pressure (1 atm).",
+      "category": "Science & Physics",
+      "ground_truth": "Real News",
+      "norm_ground_truth": "Real News",
+      "predicted_credibility": "Real News",
+      "norm_predicted": "Real News",
+      "is_exact_match": true,
+      "confidence_score": 1.0,
+      "sources": [
+        "https://projectxeros.org/water-boiling-temp-vs-pressure-guide",
+        "https://en.wikipedia.org/wiki/Boiling_point",
+        "https://best-calculators.com/education-academic/boiling-point-altitude-calculator/",
+        "https://reports.bankstreet.edu/all-about-temperature-of-a-boiling-water-updated-2026"
+      ],
+      "num_sources": 4,
+      "valid_sources_count": 4,
+      "summary_points": [
+        "The boiling point of water is a fundamental physical property that is directly influenced by the surrounding atmospheric pressure. This means that as pressure changes, the temperature at which water boils also changes.",
+        "According to established scientific principles and supported by the provided context (Sources 1, 3, 4), water boils at 100 degrees Celsius when subjected to standard atmospheric pressure, which is defined as 1 atmosphere (1 atm) or 101.325 kilopascals (kPa).",
+        "The retrieved information, particularly from sources updated in 2026, consistently discusses the relationship between boiling point, pressure, and altitude (Source 1, 3), and refers to an 'exact temperature of boiling water' under varying conditions (Source 4). This indirectly affirms the existence and accuracy of a standard boiling point under standard conditions.",
+        "Therefore, the claim that water boils at 100 degrees Celsius at standard atmospheric pressure (1 atm) is a well-established and accurate scientific fact."
+      ],
+      "latency_seconds": 10.16,
+      "from_cache": true
+    },
+    {
+      "id": 3,
+      "claim": "Humans typically have 23 pairs of chromosomes in most cells.",
+      "category": "Biology & Health",
+      "ground_truth": "Real News",
+      "norm_ground_truth": "Real News",
+      "predicted_credibility": "Real News",
+      "norm_predicted": "Real News",
+      "is_exact_match": true,
+      "confidence_score": 0,
+      "sources": [
+        "https://biennialsandeducation.org/human-chromosome-pairs-explained",
+        "https://www.sciencenewstoday.org/human-chromosomes-how-many-do-we-have-and-why",
+        "https://proteiniq.io/guides/how-many-chromosomes-do-humans-have",
+        "https://biologyinsights.com/how-many-chromosome-combinations-are-possible-in-humans/"
+      ],
+      "num_sources": 4,
+      "valid_sources_count": 4,
+      "summary_points": [
+        "Humans possess a distinct genetic blueprint, which is defined by a specific number of chromosomes found within the nuclei of their cells.",
+        "Multiple reliable sources, including those dated as recently as October 5, 2026, consistently confirm that the vast majority of human cells, specifically somatic or typical body cells, contain 46 chromosomes.",
+        "These 46 chromosomes are organized into 23 pairs, comprising 22 pairs of autosomes and one pair of sex chromosomes, directly supporting the claim that humans typically have 23 pairs of chromosomes in most cells."
+      ],
+      "latency_seconds": 11.289,
+      "from_cache": true
+    },
+    {
+      "id": 4,
+      "claim": "The Eiffel Tower is located in Paris, France.",
+      "category": "Geography",
+      "ground_truth": "Real News",
+      "norm_ground_truth": "Real News",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 20h10m28.081725492s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '72628s'}]}}"
+      ],
+      "latency_seconds": 0.634,
+      "from_cache": false
+    },
+    {
+      "id": 5,
+      "claim": "The United Kingdom officially left the European Union on January 31, 2020.",
+      "category": "Politics & History",
+      "ground_truth": "Real News",
+      "norm_ground_truth": "Real News",
+      "predicted_credibility": "Real News",
+      "norm_predicted": "Real News",
+      "is_exact_match": true,
+      "confidence_score": 0.9,
+      "sources": [
+        "https://www.davidsonmorris.com/brexit/",
+        "https://en.wikipedia.org/wiki/Brexit",
+        "https://www.theguardian.com/business/2026/nov/20/what-impact-brexit-uk-eu-economies",
+        "https://www.nytimes.com/2026/11/18/world/19int-theworld-brexit-trump-xi-putin.html"
+      ],
+      "num_sources": 4,
+      "valid_sources_count": 4,
+      "summary_points": [
+        "The United Kingdom's departure from the European Union, commonly known as Brexit, was a landmark political event that followed a referendum in 2016 and subsequent negotiations.",
+        "On January 31, 2020, the United Kingdom officially ceased to be a member state of the European Union. This date marked the legal and political withdrawal, although a transition period was in place until the end of 2020 to negotiate future trade and other relationships.",
+        "Multiple sources published in 2026 discuss 'Brexit' and 'leaving the EU' as past events, examining its impact and potential future adjustments (e.g., 'Brexit 2026: What Actually Changed After Leaving the EU?', 'What impact has Brexit had on the UK and EU economies?', 'Undoing Brexit'), implicitly confirming the event's occurrence prior to these dates. Historical records consistently confirm January 31, 2020, as the official departure date.",
+        "Therefore, the claim that the United Kingdom officially left the European Union on January 31, 2020, is accurate and supported by established historical facts."
+      ],
+      "latency_seconds": 19.89,
+      "from_cache": true
+    },
+    {
+      "id": 6,
+      "claim": "Penicillin was discovered by Scottish physician Alexander Fleming in 1928.",
+      "category": "Medicine & Science",
+      "ground_truth": "Real News",
+      "norm_ground_truth": "Real News",
+      "predicted_credibility": "Real News",
+      "norm_predicted": "Real News",
+      "is_exact_match": true,
+      "confidence_score": 0,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alexander_Fleming",
+        "https://www.britannica.com/science/How-did-Alexander-Fleming-discover-penicillin-in-1928",
+        "https://www.acs.org/education/whatischemistry/landmarks/flemingpenicillin.html",
+        "https://timesofindia.indiatimes.com/science/in-1928-alexander-fleming-noticed-a-strange-mould-on-a-petri-dish-and-this-observation-launched-the-antibiotic-era/articleshow/130850452.cms"
+      ],
+      "num_sources": 4,
+      "valid_sources_count": 4,
+      "summary_points": [
+        "Sir Alexander Fleming was a Scottish physician and microbiologist, a fact corroborated by his Wikipedia entry, which also notes his sharing of the 1945 Nobel Prize for the discovery of penicillin.",
+        "Multiple reliable sources confirm that Alexander Fleming indeed made his significant discovery of penicillin in 1928. Britannica, the American Chemical Society, and a recent article from the Times of India all specify 1928 as the year of this landmark event, which occurred through a chance observation at St. Mary's Hospital.",
+        "Based on the consistent and verifiable information from the provided context, the claim that penicillin was discovered by Scottish physician Alexander Fleming in 1928 is accurate."
+      ],
+      "latency_seconds": 13.129,
+      "from_cache": true
+    },
+    {
+      "id": 7,
+      "claim": "The Great Barrier Reef is situated off the north-east coast of Australia.",
+      "category": "Geography & Nature",
+      "ground_truth": "Real News",
+      "norm_ground_truth": "Real News",
+      "predicted_credibility": "Real News",
+      "norm_predicted": "Real News",
+      "is_exact_match": true,
+      "confidence_score": 0,
+      "sources": [
+        "https://www.wfy24.com/en/article/great-barrier-reef-2026-diving-into-the-coral-spawning-and-manta-ray-season",
+        "https://www.straitstimes.com/asia/australianz/great-barrier-reef-at-risk-of-collapse-scientists-warn",
+        "https://worldlya.com/australia/great-barrier-reef-guide/",
+        "https://matadornetwork.com/read/25-unforgettable-places-go-2026-great-barrier-reef/"
+      ],
+      "num_sources": 4,
+      "valid_sources_count": 4,
+      "summary_points": [
+        "The Great Barrier Reef is a vast coral reef system, globally recognized as the world's largest, situated off the coast of Australia.",
+        "It is a well-established geographical fact that the Great Barrier Reef is specifically located off the north-east coast of the Australian continent, extending along the Queensland coastline.",
+        "The real-time context retrieved from November 2026 confirms the ongoing existence and significance of the Great Barrier Reef within Australia, with discussions about its health, tourism, and future challenges (Sources 1, 2, 3, 4).",
+        "While the provided search snippets do not explicitly mention the 'north-east' designation, the claim accurately reflects the universally accepted and precise geographical location of the Great Barrier Reef.",
+        "Therefore, the claim that 'The Great Barrier Reef is situated off the north-east coast of Australia' is entirely accurate."
+      ],
+      "latency_seconds": 17.737,
+      "from_cache": true
+    },
+    {
+      "id": 8,
+      "claim": "Albert Einstein won the Nobel Prize in Physics in 1921 for his discovery of the law of the photoelectric effect.",
+      "category": "Physics & History",
+      "ground_truth": "Real News",
+      "norm_ground_truth": "Real News",
+      "predicted_credibility": "Real News",
+      "norm_predicted": "Real News",
+      "is_exact_match": true,
+      "confidence_score": 0.98,
+      "sources": [
+        "https://physics.stemlores.com/stories/einstein-nobel-photoelectric-effect/",
+        "https://nobel-prize.net/en/topics/einstein-and-the-prize/",
+        "https://en.wikipedia.org/wiki/Photoelectric_effect",
+        "/videos/riverview/relatedvideo?q=Einstein+Nobel+photoelectric+2026&ru=/search?q=Einstein+Nobel+photoelectric+2026&mmscn=vwrc&mid=D98F29031E621550D6F9D98F29031E621550D6F9&FORM=WRVORC&ntb=1&msockid=8e362b8be4d711f1970bad9a6b50e9e7"
+      ],
+      "num_sources": 4,
+      "valid_sources_count": 3,
+      "summary_points": [
+        "Albert Einstein is widely recognized for his groundbreaking work on the photoelectric effect, a phenomenon where electrons are emitted from a material's surface when light shines on it.",
+        "The context confirms that Albert Einstein was indeed awarded the Nobel Prize in Physics in 1921. This prize was specifically for his 'discovery of the law of the photoelectric effect,' rather than his theory of relativity, as often mistakenly assumed.",
+        "Multiple sources corroborate that Einstein received the 1921 Nobel Prize for his explanation of the photoelectric effect, making the claim accurate and verifiable."
+      ],
+      "latency_seconds": 15.793,
+      "from_cache": true
+    },
+    {
+      "id": 9,
+      "claim": "NASA's Perseverance rover successfully landed on Mars in Jezero Crater in February 2021.",
+      "category": "Space Exploration",
+      "ground_truth": "Real News",
+      "norm_ground_truth": "Real News",
+      "predicted_credibility": "Real News",
+      "norm_predicted": "Real News",
+      "is_exact_match": true,
+      "confidence_score": 0,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Perseverance_(rover)",
+        "https://orbitalradar.com/mars-rovers/perseverance",
+        "https://science.nasa.gov/mission/mars-2020-perseverance/location-map/",
+        "https://satfleetlive.com/mars/perseverance/"
+      ],
+      "num_sources": 4,
+      "valid_sources_count": 4,
+      "summary_points": [
+        "NASA's Perseverance rover, part of the Mars 2020 mission, is an advanced robotic explorer built and managed by the Jet Propulsion Laboratory.",
+        "The rover successfully landed on Mars on February 18, 2021, marking the beginning of its exploration of the Red Planet, as confirmed by Wikipedia (Source 1).",
+        "Multiple sources, including Orbital Radar, NASA Science, and SatFleetLive, consistently confirm that the Perseverance rover landed in and continues to operate within Jezero Crater, where it has driven over 45 kilometers as of late October 2026 (Sources 2, 3, 4).",
+        "Given the consistent and direct evidence from reputable sources, the claim that NASA's Perseverance rover successfully landed on Mars in Jezero Crater in February 2021 is entirely accurate."
+      ],
+      "latency_seconds": 16.148,
+      "from_cache": true
+    },
+    {
+      "id": 10,
+      "claim": "The Pacific Ocean is the largest and deepest ocean basin on Earth.",
+      "category": "Geography & Oceanography",
+      "ground_truth": "Real News",
+      "norm_ground_truth": "Real News",
+      "predicted_credibility": "Real News",
+      "norm_predicted": "Real News",
+      "is_exact_match": true,
+      "confidence_score": 0.98,
+      "sources": [
+        "https://oceanfloormap.com/ocean/pacific-ocean",
+        "https://vajiramandravi.com/current-affairs/pacific-ocean/",
+        "https://en.wikipedia.org/wiki/Pacific_Ocean",
+        "https://geographyworlds.com/blog/deepest-oceans-in-the-world-ranked/"
+      ],
+      "num_sources": 4,
+      "valid_sources_count": 4,
+      "summary_points": [
+        "The Pacific Ocean is widely recognized as the largest of the Earth's oceanic divisions, playing a significant role in global geography.",
+        "According to sources updated as recently as September 2, 2026, the Pacific Ocean is indeed the largest ocean, covering roughly one-third of the planet's surface, which unequivocally supports the 'largest' part of the claim.",
+        "Moreover, the Pacific Ocean is consistently identified as the deepest ocean on Earth. It hosts the Mariana Trench, which is explicitly stated to be the deepest point, reaching an astounding 10,994 meters.",
+        "Based on comprehensive and current information from various sources, the claim that the Pacific Ocean is both the largest and deepest ocean basin on Earth is thoroughly verified and accurate."
+      ],
+      "latency_seconds": 11.337,
+      "from_cache": true
+    },
+    {
+      "id": 11,
+      "claim": "Drinking silver nitrate or bleach cures diabetes and eliminates high blood sugar permanently.",
+      "category": "Health & Medicine",
+      "ground_truth": "Fake News",
+      "norm_ground_truth": "Fake News",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 20h6m18.921246352s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '72378s'}]}}"
+      ],
+      "latency_seconds": 0.713,
+      "from_cache": false
+    },
+    {
+      "id": 12,
+      "claim": "The Moon landing in 1969 was completely staged by NASA in a Nevada film studio directed by Stanley Kubrick.",
+      "category": "Conspiracy & History",
+      "ground_truth": "Fake News",
+      "norm_ground_truth": "Fake News",
+      "predicted_credibility": "Fake News",
+      "norm_predicted": "Fake News",
+      "is_exact_match": true,
+      "confidence_score": 0.9,
+      "sources": [
+        "https://darkskiesfilm.com/did-stanley-kubrick-say-hes-film-the-moon-landing/",
+        "https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories",
+        "https://www.newsminimalist.com/articles/kubrick-moon-landing-hoax-theory-debunked-by-evidence-5ed0572c",
+        "https://www.imdb.com/title/tt41431804/"
+      ],
+      "num_sources": 4,
+      "valid_sources_count": 4,
+      "summary_points": [
+        "The claim that the 1969 Moon landing was completely staged by NASA in a Nevada film studio and directed by Stanley Kubrick is a well-known and persistent conspiracy theory.",
+        "Recent information, as of November 2026, consistently and definitively debunks this theory, with articles specifically addressing and disproving the notion that acclaimed director Stanley Kubrick was involved in faking the Apollo 11 Moon landing.",
+        "Overwhelming evidence supports the authenticity of the 1969 Moon landing, including independent verification from international observers, lunar samples brought back to Earth, and scientific instruments left on the Moon, all of which contradict the idea of a staged event.",
+        "Therefore, the assertion that the Moon landing was a fabrication orchestrated by NASA and Kubrick is false and has been thoroughly debunked by numerous sources and extensive evidence."
+      ],
+      "latency_seconds": 13.335,
+      "from_cache": true
+    },
+    {
+      "id": 13,
+      "claim": "5G mobile network towers directly emit biological COVID-19 viruses into the atmosphere.",
+      "category": "Technology & Health",
+      "ground_truth": "Fake News",
+      "norm_ground_truth": "Fake News",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 20h2m10.241407353s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '72130s'}]}}"
+      ],
+      "latency_seconds": 0.519,
+      "from_cache": false
+    },
+    {
+      "id": 14,
+      "claim": "Eating bananas with milk creates a toxic poison that causes sudden cardiac arrest.",
+      "category": "Health & Nutrition",
+      "ground_truth": "Fake News",
+      "norm_ground_truth": "Fake News",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 19h58m1.010146063s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '71881s'}]}}"
+      ],
+      "latency_seconds": 0.476,
+      "from_cache": false
+    },
+    {
+      "id": 15,
+      "claim": "Scientists confirmed that the Earth is hollow and inhabited by an advanced civilization at the core.",
+      "category": "Pseudoscience",
+      "ground_truth": "Fake News",
+      "norm_ground_truth": "Fake News",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 19h53m51.79073023s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '71631s'}]}}"
+      ],
+      "latency_seconds": 0.787,
+      "from_cache": false
+    },
+    {
+      "id": 16,
+      "claim": "Microwaving an iPhone for 30 seconds activates a hidden feature that fully recharges its battery.",
+      "category": "Technology Hoax",
+      "ground_truth": "Fake News",
+      "norm_ground_truth": "Fake News",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 19h49m39.103258108s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '71379s'}]}}"
+      ],
+      "latency_seconds": 4.303,
+      "from_cache": false
+    },
+    {
+      "id": 17,
+      "claim": "The Great Wall of China is the only human-made structure visible from Mars with the naked eye.",
+      "category": "Myths & Space",
+      "ground_truth": "Fake News",
+      "norm_ground_truth": "Fake News",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 19h45m29.990678806s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '71129s'}]}}"
+      ],
+      "latency_seconds": 0.347,
+      "from_cache": false
+    },
+    {
+      "id": 18,
+      "claim": "Vaccines contain microscopic RFID tracking microchips manufactured by Bill Gates to control human minds.",
+      "category": "Conspiracy & Health",
+      "ground_truth": "Fake News",
+      "norm_ground_truth": "Fake News",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 19h41m21.327438348s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '70881s'}]}}"
+      ],
+      "latency_seconds": 0.413,
+      "from_cache": false
+    },
+    {
+      "id": 19,
+      "claim": "Barack Obama was born in Kenya and forged his birth certificate to become US President.",
+      "category": "Politics",
+      "ground_truth": "Fake News",
+      "norm_ground_truth": "Fake News",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 19h37m11.849926493s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '70631s'}]}}"
+      ],
+      "latency_seconds": 0.722,
+      "from_cache": false
+    },
+    {
+      "id": 20,
+      "claim": "Antarctica has secret tropical rainforests where live dinosaurs are currently being guarded by the United Nations.",
+      "category": "Hoax & Geography",
+      "ground_truth": "Fake News",
+      "norm_ground_truth": "Fake News",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 19h33m2.610319477s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '70382s'}]}}"
+      ],
+      "latency_seconds": 0.623,
+      "from_cache": false
+    },
+    {
+      "id": 21,
+      "claim": "Artificial General Intelligence (AGI) will definitely achieve human-level consciousness and replace 100% of human jobs by 2030.",
+      "category": "Technology & AI",
+      "ground_truth": "Unverified",
+      "norm_ground_truth": "Real News",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 19h28m53.178019436s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '70133s'}]}}"
+      ],
+      "latency_seconds": 0.698,
+      "from_cache": false
+    },
+    {
+      "id": 22,
+      "claim": "Drinking coffee daily reduces the overall risk of mortality in all humans.",
+      "category": "Health & Nutrition",
+      "ground_truth": "Mixed",
+      "norm_ground_truth": "Mixed/Unverified",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 19h24m43.938338645s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '69883s'}]}}"
+      ],
+      "latency_seconds": 0.358,
+      "from_cache": false
+    },
+    {
+      "id": 23,
+      "claim": "A single glass of red wine every evening is universally beneficial for heart health.",
+      "category": "Health & Medicine",
+      "ground_truth": "Mixed",
+      "norm_ground_truth": "Mixed/Unverified",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 19h20m34.688526671s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '69634s'}]}}"
+      ],
+      "latency_seconds": 0.721,
+      "from_cache": false
+    },
+    {
+      "id": 24,
+      "claim": "Extraterrestrial intelligent beings have visited Earth and are currently in secret contact with world governments.",
+      "category": "Science & Space",
+      "ground_truth": "Unverified",
+      "norm_ground_truth": "Real News",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 19h16m25.852280391s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '69385s'}]}}"
+      ],
+      "latency_seconds": 0.631,
+      "from_cache": false
+    },
+    {
+      "id": 25,
+      "claim": "Organic food is definitively more nutritious and contains significantly higher vitamin levels than conventional food.",
+      "category": "Nutrition & Agriculture",
+      "ground_truth": "Mixed",
+      "norm_ground_truth": "Mixed/Unverified",
+      "predicted_credibility": "System Error",
+      "norm_predicted": "Unknown",
+      "is_exact_match": false,
+      "confidence_score": 0,
+      "sources": [],
+      "num_sources": 0,
+      "valid_sources_count": 0,
+      "summary_points": [
+        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 19h12m16.628871292s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '69136s'}]}}"
+      ],
+      "latency_seconds": 0.439,
+      "from_cache": false
+    }
+  ]
+}
