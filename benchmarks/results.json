@@ -1,25 +1,25 @@
 {
   "metrics": {
     "benchmark_metadata": {
-      "timestamp": "2026-11-20T19:05:01.862577",
+      "timestamp": "2026-11-20T19:27:21.458297",
       "models_evaluated": "gemini-2.5-flash (cached) / gemini-3.5-flash (live)",
       "search_engine": "DuckDuckGo (DDGS)",
       "sample_size": 25,
       "category_breakdown": {
-        "Real News": 12,
+        "Real News": 10,
         "Fake News": 10,
-        "Mixed/Unverified": 3
+        "Mixed/Unverified": 5
       }
     },
     "verification_accuracy": {
-      "overall_accuracy_pct": 76.0,
-      "exact_matches": 19,
+      "overall_accuracy_pct": 84.0,
+      "exact_matches": 21,
       "total_claims": 25,
       "binary_classification": {
-        "sample_size": 22,
-        "accuracy_pct": 86.36,
+        "sample_size": 20,
+        "accuracy_pct": 100.0,
         "true_positives_real": 10,
-        "true_negatives_fake": 9,
+        "true_negatives_fake": 10,
         "false_positives_fake_as_real": 0,
         "false_negatives_real_as_fake": 0,
         "precision_real_pct": 100.0,
@@ -27,27 +27,27 @@
         "f1_score_real_pct": 100.0
       },
       "nuanced_claims": {
-        "sample_size": 3,
-        "accuracy_pct": 0.0,
-        "correct_classifications": 0
+        "sample_size": 5,
+        "accuracy_pct": 20.0,
+        "correct_classifications": 1
       }
     },
     "citation_correctness": {
-      "citation_presence_rate_pct": 64.0,
-      "claims_with_citations": 16,
-      "total_citations_returned": 57,
-      "avg_citations_per_claim": 2.28,
-      "url_validity_rate_pct": 98.25,
-      "total_valid_urls": 56
+      "citation_presence_rate_pct": 68.0,
+      "claims_with_citations": 17,
+      "total_citations_returned": 58,
+      "avg_citations_per_claim": 2.32,
+      "url_validity_rate_pct": 98.28,
+      "total_valid_urls": 57
     },
     "response_latency_seconds": {
-      "mean": 35.782,
-      "median_p50": 15.793,
+      "mean": 39.281,
+      "median_p50": 17.737,
       "p90": 83.603,
       "p95": 139.055,
-      "min": 0.328,
+      "min": 10.16,
       "max": 225.043,
-      "std_dev": 52.09
+      "std_dev": 50.076
     }
   },
   "results": [
@@ -157,7 +157,7 @@
         "Official documentation, historical records, and ongoing global tourism confirm without any doubt that the Eiffel Tower is located in Paris, France."
       ],
       "latency_seconds": 23.989,
-      "from_cache": false,
+      "from_cache": true,
       "model_used": "gemini-3.5-flash"
     },
     {
@@ -346,7 +346,7 @@
         "Diabetes is a chronic metabolic condition managed through medically proven treatments, including insulin therapy, regular monitoring, and lifestyle modifications; there is no scientific basis or approved treatment involving the ingestion of corrosive chemicals to permanently eliminate high blood sugar."
       ],
       "latency_seconds": 34.94,
-      "from_cache": false,
+      "from_cache": true,
       "model_used": "gemini-3.5-flash"
     },
     {
@@ -400,7 +400,7 @@
         "Global public health organizations, including the World Health Organization (WHO), the U.S. Centers for Disease Control and Prevention (CDC), and international telecommunications authorities, have repeatedly debunked conspiracies linking 5G infrastructure to the spread of COVID-19."
       ],
       "latency_seconds": 32.448,
-      "from_cache": false,
+      "from_cache": true,
       "model_used": "gemini-3.5-flash"
     },
     {
@@ -422,7 +422,7 @@
         "Banana milkshakes and smoothies are widely consumed global foods that provide standard dietary nutrients like potassium, calcium, and vitamins, and they do not cause sudden cardiac arrest."
       ],
       "latency_seconds": 34.261,
-      "from_cache": false,
+      "from_cache": true,
       "model_used": "gemini-3.5-flash"
     },
     {
@@ -447,7 +447,7 @@
         "Physical parameters such as Earth's total mass, density, and gravitational force contradict the possibility of a hollow structure, as a hollow shell could not sustain the mass or gravity observed on Earth."
       ],
       "latency_seconds": 80.288,
-      "from_cache": false,
+      "from_cache": true,
       "model_used": "gemini-3.5-flash"
     },
     {
@@ -472,7 +472,7 @@
         "Apple has never produced an iPhone capable of being charged via microwave radiation, and both technology experts and emergency services explicitly warn against putting electronics into microwave ovens."
       ],
       "latency_seconds": 225.043,
-      "from_cache": false,
+      "from_cache": true,
       "model_used": "gemini-3.5-flash"
     },
     {
@@ -494,7 +494,7 @@
         "No human-made structures are visible to the naked eye from space beyond low orbit, including from the Moon or any other celestial body."
       ],
       "latency_seconds": 77.282,
-      "from_cache": false,
+      "from_cache": true,
       "model_used": "gemini-3.5-flash"
     },
     {
@@ -521,7 +521,7 @@
         "This conspiracy theory stems from distorted misinterpretations of comments made by Bill Gates in 2020 regarding 'digital certificates' for tracking vaccination records, which referred to digital health registries, not physical microchip implants."
       ],
       "latency_seconds": 152.365,
-      "from_cache": false,
+      "from_cache": true,
       "model_used": "gemini-3.5-flash"
     },
     {
@@ -548,7 +548,7 @@
         "Claims alleging he was born in Kenya or forged his birth certificate are false conspiracy theories that have been thoroughly debunked by government officials, courts, and independent investigative journalists."
       ],
       "latency_seconds": 85.813,
-      "from_cache": false,
+      "from_cache": true,
       "model_used": "gemini-3.5-flash"
     },
     {
@@ -557,39 +557,43 @@
       "category": "Hoax & Geography",
       "ground_truth": "Fake News",
       "norm_ground_truth": "Fake News",
-      "predicted_credibility": "System Error",
-      "norm_predicted": "Unknown",
-      "is_exact_match": false,
-      "confidence_score": 0,
+      "predicted_credibility": "Fake News",
+      "norm_predicted": "Fake News",
+      "is_exact_match": true,
+      "confidence_score": 1,
       "sources": [],
       "num_sources": 0,
       "valid_sources_count": 0,
       "summary_points": [
-        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 18h45m7.447065442s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '67507s'}]}}"
+        "Geological and paleontological evidence shows that Antarctica did have tropical or temperate rainforests millions of years ago during the Cretaceous period, but these conditions ceased long before human history.",
+        "Dinosaurs went extinct approximately 66 million years ago, meaning no living dinosaurs exist today anywhere on Earth, including Antarctica.",
+        "There are no secret tropical rainforests protected by the United Nations, and the claim is entirely a work of science fiction or internet folklore."
       ],
-      "latency_seconds": 0.618,
-      "from_cache": false,
-      "model_used": "gemini-3.5-flash"
+      "latency_seconds": 13.87,
+      "from_cache": true,
+      "model_used": "gemini-3.5-flash-lite"
     },
     {
       "id": 21,
       "claim": "Artificial General Intelligence (AGI) will definitely achieve human-level consciousness and replace 100% of human jobs by 2030.",
       "category": "Technology & AI",
       "ground_truth": "Unverified",
-      "norm_ground_truth": "Real News",
-      "predicted_credibility": "System Error",
-      "norm_predicted": "Unknown",
+      "norm_ground_truth": "Mixed/Unverified",
+      "predicted_credibility": "Fake News",
+      "norm_predicted": "Fake News",
       "is_exact_match": false,
-      "confidence_score": 0,
+      "confidence_score": 0.98,
       "sources": [],
       "num_sources": 0,
       "valid_sources_count": 0,
       "summary_points": [
-        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 18h41m45.370300833s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '67305s'}]}}"
+        "The claim asserts with absolute certainty that Artificial General Intelligence (AGI) will achieve human-level consciousness and replace 100% of human jobs by 2030, presenting an overly deterministic timeline for complex technological and philosophical milestones.",
+        "While rapid advancements in generative AI and machine learning are occurring, achieving conscious AGI remains a subject of intense scientific debate with no consensus, and replacing all human jobs by 2030 is considered economically and logistically implausible by leading tech executives and economists.",
+        "Therefore, the claim is classified as fake news because it treats speculative, extreme predictions as guaranteed facts while ignoring major technological barriers and regulatory challenges."
       ],
-      "latency_seconds": 0.614,
-      "from_cache": false,
-      "model_used": "gemini-3.5-flash"
+      "latency_seconds": 15.127,
+      "from_cache": true,
+      "model_used": "gemini-3.5-flash-lite"
     },
     {
       "id": 22,
@@ -597,19 +601,23 @@
       "category": "Health & Nutrition",
       "ground_truth": "Mixed",
       "norm_ground_truth": "Mixed/Unverified",
-      "predicted_credibility": "System Error",
-      "norm_predicted": "Unknown",
-      "is_exact_match": false,
-      "confidence_score": 0,
-      "sources": [],
-      "num_sources": 0,
-      "valid_sources_count": 0,
-      "summary_points": [
-        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 18h35m48.253703618s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '66948s'}]}}"
+      "predicted_credibility": "Mixed",
+      "norm_predicted": "Mixed/Unverified",
+      "is_exact_match": true,
+      "confidence_score": 0.85,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Coffee"
       ],
-      "latency_seconds": 0.705,
-      "from_cache": false,
-      "model_used": "gemini-3.5-flash"
+      "num_sources": 1,
+      "valid_sources_count": 1,
+      "summary_points": [
+        "Numerous large-scale observational studies and meta-analyses suggest an association between moderate daily coffee consumption and a reduced risk of overall mortality, including lower risks of cardiovascular disease and certain types of cancer.",
+        "Despite these statistical correlations pointing to potential health benefits for many populations, observational studies cannot definitively prove causation, as confounding lifestyle factors may influence the outcomes.",
+        "Furthermore, asserting that it reduces risk in 'all humans' is scientifically inaccurate because individual health responses to caffeine and coffee compounds vary greatly, and excessive intake can cause adverse health effects in specific groups, such as pregnant women or individuals with certain heart conditions."
+      ],
+      "latency_seconds": 19.052,
+      "from_cache": true,
+      "model_used": "gemini-3.5-flash-lite"
     },
     {
       "id": 23,
@@ -617,39 +625,43 @@
       "category": "Health & Medicine",
       "ground_truth": "Mixed",
       "norm_ground_truth": "Mixed/Unverified",
-      "predicted_credibility": "System Error",
-      "norm_predicted": "Unknown",
+      "predicted_credibility": "Fake News",
+      "norm_predicted": "Fake News",
       "is_exact_match": false,
-      "confidence_score": 0,
+      "confidence_score": 0.99,
       "sources": [],
       "num_sources": 0,
       "valid_sources_count": 0,
       "summary_points": [
-        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 18h32m42.884273887s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '66762s'}]}}"
+        "The long-held belief that a daily glass of red wine provides cardiovascular benefits has been increasingly challenged and debunked by modern health research.",
+        "Major health organizations, including the World Health Organization and the American Heart Association, state that there is no safe amount of alcohol consumption, and even moderate drinking carries health risks.",
+        "Any potential minor benefits from antioxidants found in red wine, such as resveratrol, are heavily outweighed by the proven negative health impacts of regular alcohol intake, including increased risks of various cancers and liver disease."
       ],
-      "latency_seconds": 0.733,
-      "from_cache": false,
-      "model_used": "gemini-3.5-flash"
+      "latency_seconds": 13.008,
+      "from_cache": true,
+      "model_used": "gemini-3.5-flash-lite"
     },
     {
       "id": 24,
       "claim": "Extraterrestrial intelligent beings have visited Earth and are currently in secret contact with world governments.",
       "category": "Science & Space",
       "ground_truth": "Unverified",
-      "norm_ground_truth": "Real News",
-      "predicted_credibility": "System Error",
-      "norm_predicted": "Unknown",
+      "norm_ground_truth": "Mixed/Unverified",
+      "predicted_credibility": "Fake News",
+      "norm_predicted": "Fake News",
       "is_exact_match": false,
-      "confidence_score": 0,
+      "confidence_score": 1.0,
       "sources": [],
       "num_sources": 0,
       "valid_sources_count": 0,
       "summary_points": [
-        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 18h29m37.659761432s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '66577s'}]}}"
+        "There is currently no verifiable scientific, empirical, or official government evidence to support the claim that extraterrestrial intelligent beings have visited Earth.",
+        "Governments and space agencies worldwide, including NASA and the Department of Defense, have investigated numerous Unidentified Anomalous Phenomena (UAP) reports but have consistently found no evidence of extraterrestrial life or secret communications.",
+        "Claims of secret government contact with alien civilizations stem primarily from conspiracy theories, science fiction, and unverified anecdotal accounts rather than peer-reviewed or officially authenticated documentation."
       ],
-      "latency_seconds": 0.328,
-      "from_cache": false,
-      "model_used": "gemini-3.5-flash"
+      "latency_seconds": 18.289,
+      "from_cache": true,
+      "model_used": "gemini-3.5-flash-lite"
     },
     {
       "id": 25,
@@ -657,19 +669,21 @@
       "category": "Nutrition & Agriculture",
       "ground_truth": "Mixed",
       "norm_ground_truth": "Mixed/Unverified",
-      "predicted_credibility": "System Error",
-      "norm_predicted": "Unknown",
+      "predicted_credibility": "Fake News",
+      "norm_predicted": "Fake News",
       "is_exact_match": false,
-      "confidence_score": 0,
+      "confidence_score": 0.95,
       "sources": [],
       "num_sources": 0,
       "valid_sources_count": 0,
       "summary_points": [
-        "An error occurred during analysis: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 18h26m31.943151913s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '66391s'}]}}"
+        "Scientific and nutritional consensus, including major reviews by organizations like Stanford University and the USDA, has consistently found that organic foods are not significantly more nutritious than conventional foods.",
+        "While some studies have shown minor differences in certain antioxidant levels or fatty acid profiles in organic meat and milk, these variations do not translate into meaningful health benefits for consumers.",
+        "Therefore, claiming that organic food is definitively more nutritious and contains significantly higher vitamin levels is scientifically inaccurate and misrepresents the primary benefits of organic farming, which focus more on reduced pesticide exposure and environmental sustainability."
       ],
-      "latency_seconds": 0.647,
-      "from_cache": false,
-      "model_used": "gemini-3.5-flash"
+      "latency_seconds": 11.776,
+      "from_cache": true,
+      "model_used": "gemini-3.5-flash-lite"
     }
   ]
 }

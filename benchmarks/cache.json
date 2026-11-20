@@ -431,5 +431,121 @@
     "model_used": "gemini-3.5-flash",
     "latency_seconds": 85.813,
     "timestamp": "2026-11-20T18:43:17.029408"
+  },
+  "20": {
+    "claim_id": 20,
+    "claim": "Antarctica has secret tropical rainforests where live dinosaurs are currently being guarded by the United Nations.",
+    "ground_truth": "Fake News",
+    "category": "Hoax & Geography",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 1,
+      "summary_points": [
+        "Geological and paleontological evidence shows that Antarctica did have tropical or temperate rainforests millions of years ago during the Cretaceous period, but these conditions ceased long before human history.",
+        "Dinosaurs went extinct approximately 66 million years ago, meaning no living dinosaurs exist today anywhere on Earth, including Antarctica.",
+        "There are no secret tropical rainforests protected by the United Nations, and the claim is entirely a work of science fiction or internet folklore."
+      ],
+      "sources": []
+    },
+    "model_used": "gemini-3.5-flash-lite",
+    "latency_seconds": 13.87,
+    "timestamp": "2026-11-20T19:23:35.186355"
+  },
+  "22": {
+    "claim_id": 22,
+    "claim": "Drinking coffee daily reduces the overall risk of mortality in all humans.",
+    "ground_truth": "Mixed",
+    "category": "Health & Nutrition",
+    "result": {
+      "credibility": "Mixed",
+      "confidence_score": 0.85,
+      "summary_points": [
+        "Numerous large-scale observational studies and meta-analyses suggest an association between moderate daily coffee consumption and a reduced risk of overall mortality, including lower risks of cardiovascular disease and certain types of cancer.",
+        "Despite these statistical correlations pointing to potential health benefits for many populations, observational studies cannot definitively prove causation, as confounding lifestyle factors may influence the outcomes.",
+        "Furthermore, asserting that it reduces risk in 'all humans' is scientifically inaccurate because individual health responses to caffeine and coffee compounds vary greatly, and excessive intake can cause adverse health effects in specific groups, such as pregnant women or individuals with certain heart conditions."
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Coffee"
+      ]
+    },
+    "model_used": "gemini-3.5-flash-lite",
+    "latency_seconds": 19.052,
+    "timestamp": "2026-11-20T19:24:18.325331"
+  },
+  "23": {
+    "claim_id": 23,
+    "claim": "A single glass of red wine every evening is universally beneficial for heart health.",
+    "ground_truth": "Mixed",
+    "category": "Health & Medicine",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 0.99,
+      "summary_points": [
+        "The long-held belief that a daily glass of red wine provides cardiovascular benefits has been increasingly challenged and debunked by modern health research.",
+        "Major health organizations, including the World Health Organization and the American Heart Association, state that there is no safe amount of alcohol consumption, and even moderate drinking carries health risks.",
+        "Any potential minor benefits from antioxidants found in red wine, such as resveratrol, are heavily outweighed by the proven negative health impacts of regular alcohol intake, including increased risks of various cancers and liver disease."
+      ],
+      "sources": []
+    },
+    "model_used": "gemini-3.5-flash-lite",
+    "latency_seconds": 13.008,
+    "timestamp": "2026-11-20T19:24:35.336372"
+  },
+  "24": {
+    "claim_id": 24,
+    "claim": "Extraterrestrial intelligent beings have visited Earth and are currently in secret contact with world governments.",
+    "ground_truth": "Unverified",
+    "category": "Science & Space",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 1.0,
+      "summary_points": [
+        "There is currently no verifiable scientific, empirical, or official government evidence to support the claim that extraterrestrial intelligent beings have visited Earth.",
+        "Governments and space agencies worldwide, including NASA and the Department of Defense, have investigated numerous Unidentified Anomalous Phenomena (UAP) reports but have consistently found no evidence of extraterrestrial life or secret communications.",
+        "Claims of secret government contact with alien civilizations stem primarily from conspiracy theories, science fiction, and unverified anecdotal accounts rather than peer-reviewed or officially authenticated documentation."
+      ],
+      "sources": []
+    },
+    "model_used": "gemini-3.5-flash-lite",
+    "latency_seconds": 18.289,
+    "timestamp": "2026-11-20T19:24:57.628977"
+  },
+  "25": {
+    "claim_id": 25,
+    "claim": "Organic food is definitively more nutritious and contains significantly higher vitamin levels than conventional food.",
+    "ground_truth": "Mixed",
+    "category": "Nutrition & Agriculture",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 0.95,
+      "summary_points": [
+        "Scientific and nutritional consensus, including major reviews by organizations like Stanford University and the USDA, has consistently found that organic foods are not significantly more nutritious than conventional foods.",
+        "While some studies have shown minor differences in certain antioxidant levels or fatty acid profiles in organic meat and milk, these variations do not translate into meaningful health benefits for consumers.",
+        "Therefore, claiming that organic food is definitively more nutritious and contains significantly higher vitamin levels is scientifically inaccurate and misrepresents the primary benefits of organic farming, which focus more on reduced pesticide exposure and environmental sustainability."
+      ],
+      "sources": []
+    },
+    "model_used": "gemini-3.5-flash-lite",
+    "latency_seconds": 11.776,
+    "timestamp": "2026-11-20T19:25:13.408288"
+  },
+  "21": {
+    "claim_id": 21,
+    "claim": "Artificial General Intelligence (AGI) will definitely achieve human-level consciousness and replace 100% of human jobs by 2030.",
+    "ground_truth": "Unverified",
+    "category": "Technology & AI",
+    "result": {
+      "credibility": "Fake News",
+      "confidence_score": 0.98,
+      "summary_points": [
+        "The claim asserts with absolute certainty that Artificial General Intelligence (AGI) will achieve human-level consciousness and replace 100% of human jobs by 2030, presenting an overly deterministic timeline for complex technological and philosophical milestones.",
+        "While rapid advancements in generative AI and machine learning are occurring, achieving conscious AGI remains a subject of intense scientific debate with no consensus, and replacing all human jobs by 2030 is considered economically and logistically implausible by leading tech executives and economists.",
+        "Therefore, the claim is classified as fake news because it treats speculative, extreme predictions as guaranteed facts while ignoring major technological barriers and regulatory challenges."
+      ],
+      "sources": []
+    },
+    "model_used": "gemini-3.5-flash-lite",
+    "latency_seconds": 15.127,
+    "timestamp": "2026-11-20T19:26:03.410332"
   }
 }

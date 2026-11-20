@@ -27,12 +27,13 @@ def is_valid_url(url: str) -> bool:
 def normalize_label(label: str) -> str:
     """Normalizes label into standard categories: 'Real News', 'Fake News', 'Mixed/Unverified'"""
     l = str(label).strip().lower()
-    if any(k in l for k in ["real", "true", "verified", "correct"]):
+    # Check mixed/unverified first to prevent 'verified' matching inside 'unverified'
+    if any(k in l for k in ["mixed", "unverified", "disputed"]):
+        return "Mixed/Unverified"
+    if any(k in l for k in ["real", "true", "correct", "verified"]):
         return "Real News"
     if any(k in l for k in ["fake", "false", "incorrect"]):
         return "Fake News"
-    if any(k in l for k in ["mixed", "unverified", "disputed"]):
-        return "Mixed/Unverified"
     return "Unknown"
 
 def calculate_percentile(data, percentile):

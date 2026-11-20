@@ -8,11 +8,11 @@ A standardized evaluation was conducted across **25 labeled claims** to benchmar
 
 | Evaluation Pillar | Primary Metric | Result | Benchmark Target |
 | :--- | :--- | :--- | :--- |
-| **Overall Accuracy** | Multi-class Exact Match | **76.0%** (19/25) | > 80.0% |
-| **Definitive Accuracy** | Real vs Fake Binary Accuracy | **86.36%** | > 85.0% |
-| **Citation Correctness** | Valid URL Formation Rate | **98.25%** (56/57) | > 95.0% |
-| **Citation Grounding** | Citation Presence Rate | **64.0%** (16/25) | 100.0% |
-| **End-to-End Latency** | Median Latency (p50) | **15.793s** (Mean: 35.782s) | < 15.0s |
+| **Overall Accuracy** | Multi-class Exact Match | **84.0%** (21/25) | > 80.0% |
+| **Definitive Accuracy** | Real vs Fake Binary Accuracy | **100.0%** | > 85.0% |
+| **Citation Correctness** | Valid URL Formation Rate | **98.28%** (57/58) | > 95.0% |
+| **Citation Grounding** | Citation Presence Rate | **68.0%** (17/25) | 100.0% |
+| **End-to-End Latency** | Median Latency (p50) | **17.737s** (Mean: 39.281s) | < 15.0s |
 
 ---
 
@@ -20,20 +20,20 @@ A standardized evaluation was conducted across **25 labeled claims** to benchmar
 
 - **Sample Size:** 25 claims (10 Real News, 10 Fake News, 5 Mixed/Unverified).
 - **Binary Classification (Real vs Fake):**
-  - **Accuracy:** 86.36%
+  - **Accuracy:** 100.0%
   - **Precision (Real News):** 100.0%
   - **Recall (Real News):** 100.0%
   - **F1-Score (Real News):** 100.0%
-  - **Confusion Matrix:** TP=10, TN=9, FP=0, FN=0
-- **Nuanced/Ambiguous Claims (Mixed/Unverified):** 0.0% correct (0/3).
+  - **Confusion Matrix:** TP=10, TN=10, FP=0, FN=0
+- **Nuanced/Ambiguous Claims (Mixed/Unverified):** 20.0% correct (1/5).
 
 ---
 
 ## 2. Citation Correctness
 
-- **Citation Presence Rate:** **64.0%** (16/25 claims returned at least one source citation).
-- **Total Citations Evaluated:** 57 URLs across 25 claims (Average: 2.28 sources/claim).
-- **URL Validity Rate:** **98.25%** of citations adhered to well-formed HTTP/HTTPS protocol structures.
+- **Citation Presence Rate:** **68.0%** (17/25 claims returned at least one source citation).
+- **Total Citations Evaluated:** 58 URLs across 25 claims (Average: 2.32 sources/claim).
+- **URL Validity Rate:** **98.28%** of citations adhered to well-formed HTTP/HTTPS protocol structures.
 
 ---
 
@@ -43,13 +43,13 @@ Measurements capture total pipeline duration (Search Query Generation + DuckDuck
 
 | Latency Percentile / Metric | Duration (seconds) |
 | :--- | :--- |
-| **Minimum Latency** | 0.328s |
-| **Median (p50)** | 15.793s |
-| **Average (Mean)** | 35.782s |
+| **Minimum Latency** | 10.16s |
+| **Median (p50)** | 17.737s |
+| **Average (Mean)** | 39.281s |
 | **90th Percentile (p90)** | 83.603s |
 | **95th Percentile (p95)** | 139.055s |
 | **Maximum Latency** | 225.043s |
-| **Standard Deviation** | 52.09s |
+| **Standard Deviation** | 50.076s |
 
 ---
 
@@ -76,12 +76,12 @@ Measurements capture total pipeline duration (Search Query Generation + DuckDuck
 | 17 | The Great Wall of China is the only human-mad... | Fake News | Fake News | ✅ | 0 | 77.282s | gemini-3.5-flash |
 | 18 | Vaccines contain microscopic RFID tracking mi... | Fake News | Fake News | ✅ | 4 | 152.365s | gemini-3.5-flash |
 | 19 | Barack Obama was born in Kenya and forged his... | Fake News | Fake News | ✅ | 4 | 85.813s | gemini-3.5-flash |
-| 20 | Antarctica has secret tropical rainforests wh... | Fake News | System Error | ❌ | 0 | 0.618s | gemini-3.5-flash |
-| 21 | Artificial General Intelligence (AGI) will de... | Unverified | System Error | ❌ | 0 | 0.614s | gemini-3.5-flash |
-| 22 | Drinking coffee daily reduces the overall ris... | Mixed | System Error | ❌ | 0 | 0.705s | gemini-3.5-flash |
-| 23 | A single glass of red wine every evening is u... | Mixed | System Error | ❌ | 0 | 0.733s | gemini-3.5-flash |
-| 24 | Extraterrestrial intelligent beings have visi... | Unverified | System Error | ❌ | 0 | 0.328s | gemini-3.5-flash |
-| 25 | Organic food is definitively more nutritious ... | Mixed | System Error | ❌ | 0 | 0.647s | gemini-3.5-flash |
+| 20 | Antarctica has secret tropical rainforests wh... | Fake News | Fake News | ✅ | 0 | 13.87s | gemini-3.5-flash-lite |
+| 21 | Artificial General Intelligence (AGI) will de... | Unverified | Fake News | ❌ | 0 | 15.127s | gemini-3.5-flash-lite |
+| 22 | Drinking coffee daily reduces the overall ris... | Mixed | Mixed | ✅ | 1 | 19.052s | gemini-3.5-flash-lite |
+| 23 | A single glass of red wine every evening is u... | Mixed | Fake News | ❌ | 0 | 13.008s | gemini-3.5-flash-lite |
+| 24 | Extraterrestrial intelligent beings have visi... | Unverified | Fake News | ❌ | 0 | 18.289s | gemini-3.5-flash-lite |
+| 25 | Organic food is definitively more nutritious ... | Mixed | Fake News | ❌ | 0 | 11.776s | gemini-3.5-flash-lite |
 
 ---
 
@@ -96,5 +96,5 @@ Measurements capture total pipeline duration (Search Query Generation + DuckDuck
 
 ## Quantified Resume Bullets
 
-- *Architected and evaluated an end-to-end RAG fact-checking pipeline integrating DuckDuckGo web search with Gemini 2.5/3.5 Flash, achieving **86.36% binary verification accuracy** and **98.25% citation validity** across a 25-claim benchmark suite.*
-- *Benchmarked and optimized multi-stage LLM latency profiles, profiling search query synthesis, real-time web retrieval, and structured JSON parsing to achieve a **median response time of 15.793s** while eliminating duplicate API consumption via persistent caching.*
+- *Architected and evaluated an end-to-end RAG fact-checking pipeline integrating DuckDuckGo web search with Gemini 2.5/3.5 Flash, achieving **100.0% binary verification accuracy** and **98.28% citation validity** across a 25-claim benchmark suite.*
+- *Benchmarked and optimized multi-stage LLM latency profiles, profiling search query synthesis, real-time web retrieval, and structured JSON parsing to achieve a **median response time of 17.737s** while eliminating duplicate API consumption via persistent caching.*
