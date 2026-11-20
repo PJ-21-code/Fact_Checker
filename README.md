@@ -6,6 +6,10 @@ Welcome to the Fake News Predictor project! This guide will provide an overview 
 
 The Fake News Predictor is a web-based application designed to determine the credibility of news articles, social media posts, or general claims. Instead of relying solely on a static, pre-trained machine learning model, it leverages a **Retrieval-Augmented Generation (RAG)** approach. This means the system fetches real-time information from the web to give an up-to-date assessment using Large Language Models (LLMs).
 
+### Here is the deployed streamlit app of the Fact-Checker
+https://factchecker-elymdyzcet9p4puhdivvhy.streamlit.app/
+- It may take 5 minutes to wake up due to Streamlit Cloud free tier
+
 ## Core Technologies
 
 Here is a breakdown of the primary libraries and technologies utilized in this project:
@@ -85,5 +89,3 @@ The Gemini model returns a structured JSON response containing:
 ### Step 6: UI Rendering
 Streamlit receives the parsed JSON data and dynamically renders the results to the user. It uses different colors and icons (e.g., green for Real News, red for Fake News) and displays the summary bullets and source links for full transparency.
 
-### Here is the deployed streamlit app of the Fact-Checker
-https://factchecker-elymdyzcet9p4puhdivvhy.streamlit.app/
